@@ -1,5 +1,6 @@
 @include('layouts.app')
 
+
 @section('content')
 
 <style>
@@ -44,7 +45,18 @@
     font-size: 16px;
     padding: 16px 32px;
   }
+
+  .img-centered {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
   </style>
+
+<x-navbar/>
 
 <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="true">
   <div class="carousel-indicators">
@@ -85,7 +97,7 @@
           <div class="container-img col">
             <img class="image z-depth-4" src="{{ asset($i->imagem) }}" alt="" style="width:100%">
             <div class="middle">
-              <a class="btn" href="/Categoria/{{ $i->nomeCategoria }}" style="background: red; font-weight: bold; color:white; width:100%">{{ $i->nomeCategoria }}</a>
+              <a class="btn" href="/Categoria/{{ $i->id }}" style="background: red; font-weight: bold; color:white; width:100%">{{ $i->nomeCategoria }}</a>
             </div>
           </div>
     @endforeach
@@ -152,9 +164,49 @@
 </div>
 <img class="mb-5" src="images/Imagem - Mão Celular  Instagram.png" alt="" style="width: 17%; position:absolute; margin-top:-498px; margin-left:150px">
 
-<img class="mt-5 mb-5" src="images/Banner - Renox Arla 32.png" alt="" style="width: 100%">
+<img class="mt-5" src="images/Banner - Renox Arla 32.png" alt="" style="width: 100%">
 
-<div class="container">
-  <h1 style="text-align: center; color: red">Nossos Parceiros</h1>
-  <p style="text-align: center">Confira os parceiros que entendem e recomendam nossos produtos</p>
+<div class="container-fluid" style="background-color: #F9F9FC">
+  <div class="container mb-5">
+    <br><br><br>
+    <h1 style="text-align: center; color: red">Nossos Parceiros</h1>
+    <p style="text-align: center">Confira os parceiros que entendem e recomendam nossos produtos</p>
+  </div>
+
+  <div id="carouselPartners" class="carousel slide mt-5" data-bs-ride="carousel" style="width:75%; margin-right:auto; margin-left:auto;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col">
+            <div style="background-color: white; width:150px; height:100px; display:flex; justify-content: center; align-items:center">
+              <img src="images/ADNOC-Logo.png" class="d-block" alt="..." style="width:85%">
+            </div>
+          </div>
+          <div class="col">
+            <div style="background-color: white; width:150px; height:100px; display:flex; justify-content: center; align-items:center">
+              <img src="images/petronas-logo-8.png" class="d-block" alt="..." style="width:85%">
+            </div>
+          </div>
+          <div class="col">
+            <div style="background-color: white; width:150px; height:100px; display:flex; justify-content: center; align-items:center">
+              <img src="images/Petrobras_horizontal_logo_(international).svg.png" class="d-block" alt="..." style="width:85%">
+            </div>
+          </div>
+          <div class="col">
+            <div style="background-color: white; width:150px; height:100px; display:flex; justify-content: center; align-items:center">
+              <img src="images/CHEVRON - LOGO.png" class="d-block" alt="..." style="width:85%">
+            </div>
+          </div>
+          <div class="col">
+            <div style="background-color: white; width:150px; height:100px; display:flex; justify-content: center; align-items:center">
+              <img src="images/LOGO- LUBRIZOL.png" class="d-block" alt="..." style="width:85%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br>
 </div>
+
+<x-footer/>

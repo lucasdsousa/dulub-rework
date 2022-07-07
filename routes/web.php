@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoriaController;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,11 @@ use App\Http\Controllers\CategoriaController;
 |
 */
 
-Route::get('/', [CategoriaController::class, 'index']);
+Route::get('/', function() {
+    $cats = DB::table('categorias')->get();
+
+    return view('index', compact('cats'));
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');

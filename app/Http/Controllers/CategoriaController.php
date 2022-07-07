@@ -8,10 +8,5 @@ use Illuminate\Support\Facades\DB;
 
 class CategoriaController extends Controller
 {
-    public function index()
-    {
-        $cats = DB::table('categorias')->get();
-
-        return view('index', compact('cats'));
-    }
+    //
 }
