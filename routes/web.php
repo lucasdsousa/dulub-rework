@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\ProdutoController;
 use Illuminate\Support\Facades\DB;
 
 /*
@@ -15,14 +16,16 @@ use Illuminate\Support\Facades\DB;
 |
 */
 
-Route::get('/', function() {
+Route::get('/', function () {
     $cats = DB::table('categorias')->get();
 
     return view('index', compact('cats'));
-});
+})->name('index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+Route::get('/Produtos', [ProdutoController::class, 'index'])->name('produtos');
 
 require __DIR__ . '/auth.php';
