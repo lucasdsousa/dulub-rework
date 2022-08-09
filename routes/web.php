@@ -26,6 +26,26 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::get('/Empresa', function() {
+    return view('empresa');
+});
+Route::get('/Catalogos', function() {
+    return view('catalogos');
+});
+
+Route::get('/Renox', function() {
+    return view('renox');
+});
+
+Route::get('/Comprar-Dulub', function() {
+    return view('comprar_dulub');
+});
+
+Route::get('/Vender-Dulub', function() {
+    return view('vender_dulub');
+});
+
 Route::get('/Produtos', [ProdutoController::class, 'index'])->name('produtos');
+Route::get('/Produtos/{id}', [CategoriaController::class, 'index'])->name('produtos_categoria');
 
 require __DIR__ . '/auth.php';

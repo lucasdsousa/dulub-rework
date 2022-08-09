@@ -31,43 +31,48 @@ class CategoriaSeeder extends Seeder
         ]);
 
         DB::table('categorias')->insert([
-            'nomeCategoria' => 'Agrícolas',
+            'nomeCategoria' => 'Transmissões',
             'imagem' => 'images/Categoria 04.png',
         ]);
 
         DB::table('categorias')->insert([
-            'nomeCategoria' => 'Transmissões',
-            //'imagem' => 'images/Categoria 04.png',
+            'nomeCategoria' => 'Econoline',
+            'imagem' => 'images/Categoria 12.png',
         ]);
 
         DB::table('categorias')->insert([
             'nomeCategoria' => 'Engrenagens',
-            //'imagem' => 'images/Categoria 04.png',
+            'imagem' => 'images/Categoria 05.png',
         ]);
 
         DB::table('categorias')->insert([
             'nomeCategoria' => 'Industriais',
-            //'imagem' => 'images/Categoria 04.png',
+            'imagem' => 'images/Categoria 06.png',
         ]);
 
         DB::table('categorias')->insert([
             'nomeCategoria' => 'Graxas',
-            //'imagem' => 'images/Categoria 04.png',
+            'imagem' => 'images/Categoria 07.png',
         ]);
 
         DB::table('categorias')->insert([
-            'nomeCategoria' => 'Arla 32',
-            //'imagem' => 'images/Categoria 04.png',
+            'nomeCategoria' => 'Hidraulicos',
+            'imagem' => 'images/Categoria 08.png',
         ]);
 
         DB::table('categorias')->insert([
             'nomeCategoria' => 'Fluidos de Freios',
-            //'imagem' => 'images/Categoria 04.png',
+            'imagem' => 'images/Categoria 09.png',
         ]);
 
         DB::table('categorias')->insert([
             'nomeCategoria' => 'Super Aditivos',
-            //'imagem' => 'images/Categoria 04.png',
+            'imagem' => 'images/Categoria 10.png',
+        ]);
+
+        DB::table('categorias')->insert([
+            'nomeCategoria' => 'Arla 32',
+            'imagem' => 'images/Categoria 11.png',
         ]);
     }
 }

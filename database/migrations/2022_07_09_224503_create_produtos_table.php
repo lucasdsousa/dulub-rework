@@ -18,6 +18,9 @@ return new class extends Migration
             $table->id();
             $table->string('nome');
             $table->text('descricao');
+            //$table->string('linha');
+            $table->text('comp_quimica');
+            $table->text('viscosidade');
             $table->string('imagem');
             $table->string('ficha');
             $table->string('fispq');

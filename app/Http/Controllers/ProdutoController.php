@@ -15,4 +15,16 @@ class ProdutoController extends Controller
 
         return view('produtos', compact('produtos', 'categorias'));
     }
+
+    public function create() {
+        //
+    }
+
+    public function store() {
+        //
+    }
+
+    public function show($id) {
+        //
+    }
 }

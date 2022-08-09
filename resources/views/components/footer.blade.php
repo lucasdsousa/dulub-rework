@@ -29,22 +29,22 @@
         
         <div class="col mt-5" style="margin-left:150px">
             <h5 style="color: white"><strong>Links Principais</strong></h5>
-            <a href="#" style="color: white">Produtos</a> <br>
-            <a href="#" style="color: white">Catálogo</a> <br>
-            <a href="#" style="color: white">Blog</a> <br>
-            <a href="#" style="color: white">Parceiros</a> <br>
+            <a class="text-decoration-none" href="/Produtos" style="color: white">Produtos</a> <br>
+            <a class="text-decoration-none" href="/Catalogo" style="color: white">Catálogo</a> <br>
+            <a class="text-decoration-none" href="#" style="color: white">Parceiros</a> <br>
         </div>
         
         <div class="col mt-5">
             <h5 style="color: white"><strong>Links Úteis</strong></h5>
-            <a href="#" style="color: white">Sobre Nós</a> <br>
-            <a href="#" style="color: white">Trabalhe Conosco</a> <br>
-            <a href="#" style="color: white">Política de privacidade</a> <br>
+            <a class="text-decoration-none" href="/Empresa" style="color: white">Sobre Nós</a> <br>
+            <a class="text-decoration-none" href="#" style="color: white">Trabalhe Conosco</a> <br>
+            <a class="text-decoration-none" href="#" style="color: white">Política de privacidade</a> <br>
         </div>
 
         <div class="container mt-5">
             <hr>
-            <p style="text-align:center; font-size: 12px; color:white">&copy 2022 Todos os direitos reservados.</p>
+            <p style="text-align:center; font-size: 12px; color:white;">&copy 2022 Todos os direitos reservados.</p>
+            <p style="text-align:center; font-size: 12px; color:white; margin-top:-10px">Design by <a class="text-decoration-none" href="#">Paulo Vinícius</a> e Desenvolvimento por <a class="text-decoration-none" href="#">Lucas Santana</a></p>
         </div>
 
     </div>

@@ -1,9 +1,16 @@
 @include('layouts.app')
 
-<nav class="navbar navbar-expand-lg shadow" style="background-color: black">
+<style>
+  .nav-hover:hover {
+    background-color: red;
+    transition: 0.5s
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg shadow fixed-top" style="background-color: black;">
     <div class="container">
-      <a class="navbar-brand" href="#" style="color: white">Dulub
-        <!-- <img src="images/Logo - Dulub.png" alt="" style="width: 7%;"> -->
+      <a class="navbar-brand" href="/" style="">
+        <img class="me-5" src="images/Logo - Dulub.svg" alt="" width="70">
       </a>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
         <div class="hamburger-toggle">
@@ -14,23 +21,27 @@
           </div>
         </div>
       </button>
-      <div class="collapse navbar-collapse" id="navbar-content">
+      <div class="collapse navbar-collapse" id="navbar-content" style="margin-left:100px">
         <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" style="color: white">HOME</a>
+            <a class="nav-link active me-4 text-nowrap" aria-current="page" href="/" style="color: red; font-size:14px">HOME</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color: white">A DUNAX</a>
+            <a class="nav-link me-4 text-light nav-hover text-nowrap" href="/Empresa" style="font-size:14px">A DUNAX</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link me-4 link-light nav-hover text-nowrap" href="/Produtos" style="font-size:14px">PRODUTOS</a>
           </li>
 
-          <li class="nav-item dropdown dropdown-mega position-static">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" style="color: white">PRODUTOS</a>
+          <!-- <li class="nav-item dropdown dropdown-mega position-static">
+            <a class="nav-link dropdown-toggle me-4" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" style="font-size:14px">PRODUTOS</a>
             <div class="dropdown-menu shadow dropdown-center container-fluid">
-              <div class="mega-content px-4">
+              <div class="mega-content px-4 container">
                 <div class="container">
-                  <div class="row">
-                    <div class="col">
+                  <div class="row container">
+                    <div class="col container">
                       <a href="#" style="color:red">Veículos Leves</a>
                       <div>
                         <a class="list-group-item" href="#">Ultratech</a>
@@ -108,14 +119,26 @@
                 </div>
               </div>
             </div>
+          </li> -->
+          
+          <li class="nav-item">
+            <a class="nav-link me-4 text-light nav-hover text-nowrap" href="/Catalogos" style="font-size:14px">CATÁLOGOS</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color: white">CATÁLOGOS</a>
+            <a class="nav-link me-4 text-light nav-hover text-nowrap" href="/Renox" style="font-size:14px">ARLA 32</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color: white">RENOX ARLA 32</a>
+            <a class="nav-link me-5 text-light nav-hover" text-nowrap href="#" style="font-size:14px">COMERCIAL</a>
+          </li>
+          
+          <li class="nav-item">
+            <strong><a class="nav-link text-light text-nowrap" href="https://www.instagram.com/duluboficial/" target="_blank" style="font-size:14px;"><i class="fab fa-instagram"></i> DULUBOFICIAL</a></strong>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link ms-2 btn text-light text-nowrap" href="#" style="background-color:red; border-radius:0 !important; font-size:14px">TRABALHE CONOSCO</a>
           </li>
         </ul>
       </div>
