@@ -1,0 +1,1 @@
+Olá, meu nome é {{ $name }} e estou me candidatando à vaga {{ $vaga }}. Segue em anexo meu currículo.

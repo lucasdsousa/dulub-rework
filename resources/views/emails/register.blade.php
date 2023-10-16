@@ -1,0 +1,1 @@
+Cadastro realizado por {{ $user->name }} no setor {{ $user->setor }}. Faça login no site para aprovar.
